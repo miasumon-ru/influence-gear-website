@@ -42,3 +42,71 @@ ul li a{
     text-decoration: none;
     color: #3A3A3A;
 }
+
+/* banner starts */
+.banner{
+    display: flex;
+    gap: 380px;
+    align-items: center;
+    margin-top: 30px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 3.25rem;
+}
+.banner-content{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.pre-book-btn{
+    padding: 10px 24px;
+    border-radius: 70px;
+    background: #E02C6D;
+    color: #FFF;
+    border: 0;
+}
+
+.banner-img{
+    background-image: url("../images/Circle\ design.svg");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+.banner-img img{
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+
+
+
+/* responsive for different devices */
+@media screen and (max-width:576px) {
+    nav,ul{
+        flex-direction: column;
+    
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-content{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav,ul{
+        flex-direction: column;
+    
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+}
