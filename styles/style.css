@@ -147,8 +147,8 @@ ul li a{
 
 /* footer starts */
 footer{
-    max-width: 1440px;
-    margin: 0 auto;
+    /* max-width: 1440px;
+    margin: 0 auto; */
     background: #0A0826;
     text-align: center;
     color: #FFF;
