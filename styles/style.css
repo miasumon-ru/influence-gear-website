@@ -9,7 +9,7 @@ body{
 
 /* header style starts  */
 header{
-    max-width: 1440px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -72,19 +72,80 @@ ul li a{
     /* background-repeat: no-repeat; */
 }
 .banner-img img{
-    width: 100%;
+    max-width: 440px;
     padding: 10px;
     /* border: 1px solid red; */
 }
 
+/* sponsor section starts */
+.sponsor{
+    max-width: 1020px;
+    margin: 50px auto;
+    display: flex;
+    gap: 60px;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    padding: 15px 0;
+    opacity: 0.7;
+
+  
+}
+.sponsor-img-one{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+}
+.sponsor-img-two{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.sponsor img{
+    width: 100%; 
+}
+
+/* feature section starts */
+.feature{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.feature-img img{
+    max-width:410px;
+  
+}
+.feature-title{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.feature-content{
+    font-weight: 700;
+}
+.feature-btn{
+    color: #FFF;
+    font-weight: 700;
+    padding: 15px 30px;
+    background: #E02C6D;
+    border: 0;
+
+}
 
 
 /* responsive for different devices */
 @media screen and (max-width:576px) {
-    nav,ul{
+    nav,ul,.sponsor,.feature{
         flex-direction: column;
     
     }
+ 
     .banner{
         flex-direction: column-reverse;
         gap: 10px;
@@ -96,11 +157,42 @@ ul li a{
         text-align: center;
         font-size: 0.8rem;
     }
+
+    .sponsor{
+        border: none;
+
+    }
+
+    .sponsor-img-one{
+        gap: 30px;
+    }
+    .sponsor-img-two{
+        gap: 30px;
+        justify-content: space-around;
+        
+    }
+
+    /* feature starts */
+    .feature-img img{
+        /* width: 100%; */
+    }
+    
+    .feature-title{
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .feature-content{
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+
+ 
     
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
-    nav,ul{
+    nav,ul,.sponsor,.feature{
         flex-direction: column;
     
     }
@@ -108,5 +200,11 @@ ul li a{
         flex-direction: column-reverse;
         gap: 10px;
     }
+
+    .feature-content{
+        text-align: center;
+    }
+
+
 
 }
