@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -46,7 +51,7 @@ ul li a{
 /* banner starts */
 .banner{
     display: flex;
-    gap: 380px;
+    /* gap: 380px; */
     align-items: center;
     margin-top: 30px;
 }
@@ -55,6 +60,7 @@ ul li a{
     font-size: 3.25rem;
 }
 .banner-content{
+    max-width: 582px;
     font-weight: 600;
     font-size: 1.1rem;
 }
@@ -93,13 +99,12 @@ ul li a{
 }
 .sponsor-img-one{
     display: flex;
-    gap: 70px;
-    align-items: center;
+    gap: 40px;
     justify-content: center;
 }
 .sponsor-img-two{
     display: flex;
-    gap: 70px;
+    gap: 40px;
     align-items: center;
     justify-content: center;
  
@@ -127,6 +132,7 @@ ul li a{
     font-size: 2rem;
 }
 .feature-content{
+    max-width: 610px;
     font-weight: 700;
 }
 .feature-btn{
@@ -138,6 +144,35 @@ ul li a{
 
 }
 
+
+/* footer starts */
+footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #0A0826;
+    text-align: center;
+    color: #FFF;
+}
+
+.footer-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.footer-content{
+   
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.footer-social-links a{
+    color: #FFF;
+
+
+}
+.social{
+    width: 50px;
+    height: 50px;
+}
 
 /* responsive for different devices */
 @media screen and (max-width:576px) {
@@ -157,6 +192,9 @@ ul li a{
         text-align: center;
         font-size: 0.8rem;
     }
+    .banner-img{
+        background-image: none;
+    }
 
     .sponsor{
         border: none;
@@ -164,7 +202,7 @@ ul li a{
     }
 
     .sponsor-img-one{
-        gap: 30px;
+        /* gap: 30px; */
     }
     .sponsor-img-two{
         gap: 30px;
@@ -187,9 +225,18 @@ ul li a{
         font-size: 0.8rem;
     }
 
- 
-    
+    .footer-title{
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .footer-content{
+        font-weight: 700;
+        font-size: 0.5rem;
+    }
 }
+
+
+/*  responsive styles for various devices */
 
 @media screen and (min-width:576px) and (max-width:992px) {
     nav,ul,.sponsor,.feature{
